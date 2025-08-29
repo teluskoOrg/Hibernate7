@@ -15,8 +15,9 @@ public class Main {
 
         Session session = sf.openSession();
 
-//        Laptop laptop = session.get(Laptop.class, 2);
-//        Laptop laptop = session.load(Laptop.class, 2);
+//        Laptop laptop = session.find(Laptop.class, 2);
+//        Laptop laptop = session.getReference(Laptop.class, 2);
+
         Laptop laptop = session.getReference(Laptop.class,2);
         System.out.println(laptop);
         session.close();
